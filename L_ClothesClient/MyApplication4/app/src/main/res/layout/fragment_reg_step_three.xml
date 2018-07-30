@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_regstepthree"
+    android:background="@color/page_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/regthree_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:hint="密码"/>
+
+    <EditText
+        android:id="@+id/regthree_et_passwordagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/regthree_et_password"
+        android:inputType="textPassword"
+        android:hint="再次输入密码" />
+
+    <TextView
+        android:id="@+id/regthree_tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regthree_et_passwordagain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#FF0000"/>
+    <RadioGroup
+        android:id="@+id/regthree_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignTop="@+id/regthree_tv_hint"
+        android:layout_alignLeft="@+id/regthree_et_passwordagain"
+        android:layout_alignStart="@+id/regthree_et_passwordagain"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp">
+
+        <RadioButton
+            android:id="@+id/regthree_rb_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/regtwo_rg"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@+id/regthree_tv_hint"
+            android:layout_toRightOf="@+id/regthree_tv_hint"
+            android:text="医生" />
+
+        <RadioButton
+            android:id="@+id/regthree_rb_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regthree_et_passwordagain"
+            android:layout_alignStart="@+id/regthree_et_passwordagain"
+            android:layout_alignTop="@+id/regtwo_rg"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp"
+            android:text="患者" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

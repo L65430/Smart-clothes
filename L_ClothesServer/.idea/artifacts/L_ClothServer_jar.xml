@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="L_ClothServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/L_ClothServer_jar</output-path>
+    <root id="archive" name="L_ClothServer.jar">
+      <element id="module-output" name="L_ClothServer" />
+      <element id="extracted-dir" path="E:/jar/mina-core-2.0.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/commons-logging-1.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/taobao-sdk-java-auto_1455552377940-20170411.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/slf4j-nop-1.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/mysql-connector-java-5.1.6-bin.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/bcprov-ext-jdk15on-149.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/slf4j-api-1.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/jar/fastjson-1.2.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

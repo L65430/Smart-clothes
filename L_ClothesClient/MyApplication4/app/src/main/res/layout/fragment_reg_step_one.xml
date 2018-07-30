@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_regstepone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:paddingLeft="10dp"
+    android:paddingTop="30dp" >
+
+
+    <EditText
+        android:id="@+id/regone_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        android:hint="电话"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/regone_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        android:background="@drawable/edit_bg"
+        android:hint="名字"
+        android:inputType="text"
+        android:layout_below="@+id/regone_et_phone"
+        android:layout_alignLeft="@+id/regone_et_phone"
+        android:layout_alignStart="@+id/regone_et_phone"
+        android:layout_alignRight="@+id/regone_et_phone"
+        android:layout_alignEnd="@+id/regone_et_phone">
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/regone_et_number"
+        android:layout_below="@+id/regone_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/checknumber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入验证码"
+            android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/getchecknumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

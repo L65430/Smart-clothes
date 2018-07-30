@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.example.l.l_clothers"
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/android-support-v4.jar')
+    compile files('libs/android_api_1.1_forsdk.jar')
+    compile files('libs/bcprov-ext-jdk15on-149.jar')
+    compile files('libs/commons-codec-1.10.jar')
+    compile files('libs/fastjson-1.2.1.jar')
+    compile files('libs/galaxy.jar')
+    compile files('libs/galaxy_mini.jar')
+    compile files('libs/mina-core-2.0.9.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/slf4j-api-1.7.7.jar')
+    compile files('libs/slf4j-nop-1.6.4.jar')
+    compile files('libs/VoiceRecognition-1.6.2.jar')
+    compile files('libs/Baidu-SpeechRecognitionUI-SDK-Android-1.6.2.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:23.4.0'
+    testCompile 'junit:junit:4.12'
+}
